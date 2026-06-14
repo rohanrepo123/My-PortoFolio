@@ -1,5 +1,5 @@
 const GITHUB_USER = "rohanrepo123";
-const LINKEDIN_URL = "https://www.linkedin.com/in/rohan-kumar/";
+const LINKEDIN_URL = "https://www.linkedin.com/in/rohan-kumar2027/";
 const GITHUB_REFRESH_MS = 60_000;
 
 const projects = [
