@@ -19,6 +19,14 @@ The site will publish at:
 https://rohanrepo123.github.io/My-PortoFolio/
 ```
 
+If the workflow fails at `Configure Pages`, GitHub Pages has not been enabled yet. Open:
+
+```text
+https://github.com/rohanrepo123/My-PortoFolio/settings/pages
+```
+
+Then set `Build and deployment > Source` to `GitHub Actions` and rerun the latest workflow.
+
 ## GitHub Repo Tracker
 
 The portfolio includes a client-side tracker that fetches public repository metadata from:
