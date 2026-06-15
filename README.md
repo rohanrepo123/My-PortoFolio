@@ -14,9 +14,7 @@
 
 ---
 
-
-<a href="https://rohanrepo123.github.io/My-PortoFolio/"
-   target="_blank"
+<a href="https://rohanrepo123.github.io/My-PortoFolio/" target="blank"
    rel="noopener noreferrer">
   🌐 My Live Portfolio
 </a>
