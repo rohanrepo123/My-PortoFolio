@@ -1,52 +1,77 @@
-# Rohan Kumar Portfolio
+# 👋 Hi, I'm Rohan Kumar
 
-Static portfolio for an AI/CV/NLP researcher-engineer profile.
+<div align="center">
 
-## Free 1-Year+ Deployment
+### 🎓 B.Tech CSE (AI & ML) @ IIIT Nagpur
 
-Use GitHub Pages. It is free for public repositories and does not require a paid server, backend, or expiring trial.
+### 🔬 AI Research Intern @ IIT Bombay
 
-### Deploy
+### 🤖 Building with AI · Machine Learning · Computer Vision · NLP
 
-1. Push these files to `rohanrepo123/My-PortoFolio` on the `main` branch.
-2. In GitHub, open `Settings > Pages`.
-3. Set `Source` to `GitHub Actions`.
-4. Open the `Actions` tab and run `Deploy Portfolio to GitHub Pages`, or push to `main`.
+### 🚀 Open to AI / ML / Research / Software Engineering Internships
 
-The site will publish at:
+</div>
 
-```text
-https://rohanrepo123.github.io/My-PortoFolio/
-```
+---
 
-If the workflow fails at `Configure Pages`, GitHub Pages has not been enabled yet. Open:
+## 🌐 Live Portfolio
 
-```text
-https://github.com/rohanrepo123/My-PortoFolio/settings/pages
-```
+🔗 **Portfolio:** https://rohanrepo123.github.io/My-PortoFolio/
 
-Then set `Build and deployment > Source` to `GitHub Actions` and rerun the latest workflow.
+---
 
-## GitHub Repo Tracker
+## 👨‍💻 About Me
 
-The portfolio includes a client-side tracker that fetches public repository metadata from:
+I am a B.Tech student in **Computer Science & Engineering (AI & ML)** at **IIIT Nagpur** with a strong interest in building intelligent systems that combine research with practical applications.
 
-```text
-https://api.github.com/users/rohanrepo123/repos
-```
+I enjoy working across:
 
-It refreshes while the page is open, stores the last seen repo push timestamps in `localStorage`, and highlights repositories updated since the visitor's previous snapshot.
+- Machine Learning
+- Deep Learning
+- Computer Vision
+- Natural Language Processing (NLP)
+- Explainable AI (XAI)
+- Medical Imaging AI
+- Retrieval-Augmented Generation (RAG)
 
-## Local Preview
+Currently, I am working as an **AI Research Intern at IIT Bombay**.
 
-From this folder:
+---
 
-```powershell
-python -m http.server 4173 --bind 127.0.0.1
-```
+## 🛠️ Tech Stack
 
-Then open:
+### Languages
 
-```text
-http://127.0.0.1:4173/
-```
+`Python` · `C++` · `C` · `JavaScript` · `PHP`
+
+### AI / ML
+
+`PyTorch` · `TensorFlow` · `Keras` · `scikit-learn` · `OpenCV`
+
+### Frameworks
+
+`FastAPI` · `Flask` · `Streamlit`
+
+### Tools
+
+`Docker` · `AWS` · `Git` · `GitHub` · `MySQL`
+
+---
+
+## 📫 Connect With Me
+
+🔗 LinkedIn: https://www.linkedin.com/in/rohan-kumar2027/
+
+🐙 GitHub: https://github.com/rohanrepo123
+
+📧 Email: rk0054952@gmail.com
+
+🌐 Portfolio: https://rohanrepo123.github.io/My-PortoFolio/
+
+🐦 X: https://x.com/Rohan_Interest
+
+🦋 Bluesky: https://bsky.app/profile/rohanrepo123
+
+---
+
+> Building AI systems that can retrieve, reason, see, and ship into production.
