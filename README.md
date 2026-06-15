@@ -14,10 +14,12 @@
 
 ---
 
-## 🌐 Live Portfolio
 
-🔗 **Portfolio:** https://rohanrepo123.github.io/My-PortoFolio/
-
+<a href="https://rohanrepo123.github.io/My-PortoFolio/"
+   target="_blank"
+   rel="noopener noreferrer">
+  🌐 My Live Portfolio
+</a>
 ---
 
 ## 👨‍💻 About Me
