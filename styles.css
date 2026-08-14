@@ -52,6 +52,7 @@ a {
   text-decoration: none;
 }
 
+
 #neural-canvas {
   position: fixed;
   inset: 0;
@@ -763,4 +764,91 @@ h3 {
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
   }
+}
+
+
+/* =========================================
+   Typography
+   ========================================= */
+
+:root {
+  --font-main: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+  font-family: var(--font-main);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+span {
+  font-family: var(--font-main);
+}
+
+/* Technical / system-style elements */
+.eyebrow,
+.hero-tags span,
+.project-tags span,
+.card-kicker,
+.signal-panel,
+.metrics-strip span,
+.tracker-stats span,
+.tracker-item small,
+.tracker-item em {
+  font-family: var(--font-mono);
+}
+
+/* Main hero name */
+#hero-title {
+  font-family: var(--font-main);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 0.95;
+}
+
+/* Section headings */
+.section-heading h2,
+.contact-copy h2 {
+  font-family: var(--font-main);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+/* Project titles */
+.project-card h3 {
+  font-family: var(--font-main);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Technical labels */
+.hero-tags span,
+.project-tags span,
+.stack-map span {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: -0.01em;
+}
+
+/* Buttons */
+.button,
+.header-action,
+.nav-links a {
+  font-family: var(--font-main);
+  font-weight: 500;
+}
+
+/* GitHub / technical tracker */
+.repo-tracker,
+.tracker-stats strong,
+.tracker-item strong {
+  font-family: var(--font-main);
 }

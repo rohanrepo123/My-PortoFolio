@@ -69,8 +69,8 @@ Currently, I am working as an **AI Research Intern at IIT Bombay**.
 🌐 Portfolio: https://rohanrepo123.github.io/My-PortoFolio/
 
 🐦 X: https://x.com/Rohan_Interest
-
-🦋 Bluesky: https://bsky.app/profile/rohanrepo123
+<!-- 
+🦋 Bluesky: https://bsky.app/profile/rohanrepo123 -->
 
 ---
 

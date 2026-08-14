@@ -2,125 +2,543 @@ const GITHUB_USER = "rohanrepo123";
 const LINKEDIN_URL = "https://www.linkedin.com/in/rohan-kumar2027/";
 const GITHUB_REFRESH_MS = 60_000;
 
+// const projects = [
+//   {
+//     name: "Hired",
+//     category: ["rag", "nlp"],
+//     role: "Conversational RAG Agent",
+//     language: "Python",
+//     year: "2026",
+//     url: "https://github.com/rohanrepo123/Hired",
+//     summary:
+//       "Stateless FastAPI agent for SHL assessment recommendation using semantic retrieval, ChromaDB, OpenAI embeddings, Groq LLMs, clarification turns, and hallucination control.",
+//     tags: ["FastAPI", "LangChain", "ChromaDB", "RAG", "Groq"],
+//   },
+//   {
+//     name: "The Pitch Visualizer",
+//     category: ["rag", "nlp"],
+//     role: "Text-to-Storyboard Generator",
+//     language: "Python",
+//     year: "2026",
+//     url: "https://github.com/rohanrepo123/The-Pitch-Visualizer",
+//     summary:
+//       "Flask and LangChain app that decomposes stories into visual beats, preserves scene memory, and streams generated storyboard panels with structured parsing fallbacks.",
+//     tags: ["Flask", "LangChain", "OpenAI", "Pydantic", "NDJSON"],
+//   },
+//   {
+//     name: "LearnTube AI",
+//     category: ["rag", "nlp"],
+//     role: "YouTube Video Q&A Assistant",
+//     language: "Python",
+//     year: "2026",
+//     url: "https://github.com/rohanrepo123/LearnTube-AI-YouTube-Video-Q-A-Assistant-using-RAG-",
+//     summary:
+//       "RAG assistant that extracts video transcripts, builds embeddings, and turns long-form learning videos into an interactive question-answering experience.",
+//     tags: ["RAG", "Embeddings", "Transcript QA", "Chat UI"],
+//   },
+//   {
+//     name: "Giftyy for MumzWorld",
+//     category: ["nlp", "ml"],
+//     role: "Bilingual Gift Recommendation",
+//     language: "Python",
+//     year: "2026",
+//     url: "https://github.com/rohanrepo123/Giftyy-For-MumzWorld-",
+//     summary:
+//       "AI-powered English and Arabic gift recommendation system focused on intent understanding, product matching, and practical ecommerce personalization.",
+//     tags: ["Recommendation", "EN/AR", "NLP", "Personalization"],
+//   },
+//   {
+//     name: "AI Document Analyzer",
+//     category: ["rag", "nlp"],
+//     role: "Semantic Search Web App",
+//     language: "Python",
+//     year: "2026",
+//     url: "https://github.com/rohanrepo123/AI-Document-Analyzer-",
+//     summary:
+//       "Document intelligence system for PDFs, DOCX, and images with OCR, summarization, NER, keyword extraction, sentiment analysis, and FAISS semantic search.",
+//     tags: ["Flask", "FAISS", "OCR", "NER", "KeyBERT"],
+//   },
+//   {
+//     name: "AI Tutor Transformer Based",
+//     category: ["nlp", "ml"],
+//     role: "Distributed Intelligent Tutoring",
+//     language: "Jupyter Notebook",
+//     year: "2026",
+//     url: "https://github.com/rohanrepo123/AI-Tutor-Transformer-Based-",
+//     summary:
+//       "Microservice-oriented tutoring system for intent detection, topic classification, learning-style prediction, and adaptive response generation.",
+//     tags: ["FastAPI", "TensorFlow", "SBERT", "Word2Vec", "Microservices"],
+//   },
+//   {
+//     name: "Civic Complaint Prioritization",
+//     category: ["nlp", "ml"],
+//     role: "Multilingual Grievance Triage",
+//     language: "Jupyter Notebook",
+//     year: "2026",
+//     url: "https://github.com/rohanrepo123/Civic-Complaint-Prioritization-a-NLP-approach",
+//     summary:
+//       "NLP benchmarking pipeline for citizen complaints using multilingual transformers, category classification, urgency prediction, and explainability tooling.",
+//     tags: ["IndicBERT", "XLM-R", "XGBoost", "SHAP", "LIME"],
+//   },
+//   {
+//     name: "Face Blurring New Approach",
+//     category: ["cv"],
+//     role: "Real-time Privacy Masking",
+//     language: "Jupyter Notebook",
+//     year: "2026",
+//     url: "https://github.com/rohanrepo123/Face_Blurring-New_approach",
+//     summary:
+//       "OpenCV and MTCNN face masking system with facial landmark detection, head pose estimation, and adaptive masks optimized for live webcam privacy.",
+//     tags: ["OpenCV", "MTCNN", "Landmarks", "Head Pose", "Realtime"],
+//   },
+//   {
+//     name: "YOLO Object Detection",
+//     category: ["cv"],
+//     role: "Object Detection Pipeline",
+//     language: "Jupyter Notebook",
+//     year: "2026",
+//     url: "https://github.com/rohanrepo123/Yolo_Object_Detection",
+//     summary:
+//       "Complete YOLOv5 object detection workflow using PyTorch, covering model setup, inference, visual detection output, and CV experimentation.",
+//     tags: ["YOLOv5", "PyTorch", "Computer Vision", "Detection"],
+//   },
+//   {
+//     name: "Dark Horse ClaudeSolvathon",
+//     category: ["rag", "nlp"],
+//     role: "Research Search Engine",
+//     language: "Jupyter Notebook",
+//     year: "2025",
+//     url: "https://github.com/rohanrepo123/Dark_Horse_ClaudeSolvathon",
+//     summary:
+//       "Hackathon RAG search system for dark matter research data, recognized with a 4th-place finish at ClaudeSolvathon IIIT Nagpur.",
+//     tags: ["RAG", "Research Search", "Claude", "Hackathon"],
+//   },
+// ];
+
+
 const projects = [
   {
-    name: "Hired",
-    category: ["rag", "nlp"],
-    role: "Conversational RAG Agent",
-    language: "Python",
+    name: "RoadCap-ReWIn",
+    category: ["cv", "dl", "research"],
+    role: "Traffic Sign Detection & Semantic Captioning",
+    language: "Jupyter Notebook",
     year: "2026",
-    url: "https://github.com/rohanrepo123/Hired",
+    url: "https://github.com/rohanrepo123/RoadCap-ReWIn-",
+    featured: true,
+    priority: 1,
     summary:
-      "Stateless FastAPI agent for SHL assessment recommendation using semantic retrieval, ChromaDB, OpenAI embeddings, Groq LLMs, clarification turns, and hallucination control.",
-    tags: ["FastAPI", "LangChain", "ChromaDB", "RAG", "Groq"],
+      "Vision-language research pipeline that extends traffic-sign detection into semantic explanation by combining YOLO-based detection with BLIP, ViT-GPT2, and Qwen3-VL captioning. The project extends the ReWaIn-MTS dataset into a structured vision-language dataset with five semantic captions per sign.",
+    tags: [
+      "YOLOv8",
+      "Qwen3-VL",
+      "BLIP",
+      "ViT-GPT2",
+      "PyTorch",
+      "HuggingFace",
+      "LoRA"
+    ],
+    metrics: ["1,439 images", "2,283 signs", "37 classes", "11K+ caption pairs"],
+    result:
+      "YOLOv8x achieved 96.89% mAP@50 and 93.98% recall; BLIP achieved 0.7552 BLEU-4 and 1.7991 CIDEr; Qwen3-VL achieved 0.8550 BERTScore F1.",
+    architecture:
+      "Road Scene → YOLO Detection → Sign Crop → BLIP / ViT-GPT2 / Qwen3-VL → Semantic Explanation"
+  },
+  {
+    name: "AI Tutor Transformer Based",
+    category: ["nlp","dl", "ml", "backend", "research"],
+    role: "Distributed Intelligent Tutoring System",
+    language: "Jupyter Notebook",
+    year: "2026",
+    url: "https://github.com/rohanrepo123/AI-Tutor-Transformer-Based-",
+    featured: true,
+    priority: 2,
+    summary:
+      "Distributed AI tutoring architecture that analyzes student queries for both academic topic and teaching strategy, then coordinates multiple inference services to deliver adaptive responses. The primary node manages orchestration and dialogue while secondary GPU nodes expose NLP prediction services through FastAPI.",
+    tags: [
+      "FastAPI",
+      "Sentence-BERT",
+      "Word2Vec",
+      "LSTM",
+      "Scikit-learn",
+      "Gemma",
+      "Distributed AI"
+    ],
+    metrics: ["95% topic classification accuracy", "97% tutor-mode validation accuracy"],
+    result:
+      "The distributed execution design reports a 30–40% reduction in response latency while supporting scalable tutoring workflows.",
+    architecture:
+      "Student Query → Topic Detection → Tutor Mode Prediction → Retrieval → Prompt Construction → Gemma → Adaptive Response"
+  },
+
+  {
+    name: "Civic Complaint Prioritization",
+    category: ["nlp","dl" ,"ml", "research"],
+    role: "Multilingual Civic Complaint Classification & Triage",
+    language: "Jupyter Notebook",
+    year: "2025",
+    url: "https://github.com/rohanrepo123/Civic-Complaint-Prioritization-a-NLP-approach",
+    featured: true,
+    priority: 3,
+    summary:
+      "End-to-end NLP system for classifying long, multilingual and code-mixed civic complaints into municipal categories and predicting urgency. The project compares classical machine-learning baselines against multilingual transformers and reformulates urgency prediction as a sentence-pair reasoning problem.",
+    tags: [
+      "IndicBERT",
+      "XLM-R",
+      "mBERT",
+      "XGBoost",
+      "SVM",
+      "NLI",
+      "HuggingFace"
+    ],
+    metrics: ["~25K complaints", "32 categories", "4 urgency levels"],
+    result:
+      "IndicBERT reached roughly 74.3% category accuracy with ~0.74 macro-F1, while the binary NLI urgency formulation reached roughly 82–83% accuracy with ~0.76–0.77 macro-F1.",
+    architecture:
+      "Complaint → Preprocessing → Category Classification + Urgency Reasoning → Priority Assignment"
   },
   {
     name: "The Pitch Visualizer",
-    category: ["rag", "nlp"],
-    role: "Text-to-Storyboard Generator",
+    category: ["genai", "nlp", "cv"],
+    role: "Story-to-Storyboard Generation",
     language: "Python",
     year: "2026",
     url: "https://github.com/rohanrepo123/The-Pitch-Visualizer",
+    featured: true,
+    priority: 4,
     summary:
-      "Flask and LangChain app that decomposes stories into visual beats, preserves scene memory, and streams generated storyboard panels with structured parsing fallbacks.",
-    tags: ["Flask", "LangChain", "OpenAI", "Pydantic", "NDJSON"],
+      "Generative AI application that converts stories or pitches into coherent visual storyboards. The pipeline decomposes text into panels, creates image prompts, streams generated scenes incrementally, and maintains visual continuity using extracted scene memory and style locking.",
+    tags: [
+      "Flask",
+      "OpenAI",
+      "LangChain",
+      "Pydantic",
+      "NDJSON",
+      "Vision Models",
+      "Prompt Engineering"
+    ],
+    architecture:
+      "Story → Panel Decomposition → Prompt Enhancement → Image Generation → Visual Memory → Next Panel"
   },
   {
+    name: "Hired",
+    category: ["rag", "nlp", "backend", "genai"],
+    role: "Conversational RAG Assessment Recommender",
+    language: "Python",
+    year: "2026",
+    url: "https://github.com/rohanrepo123/Hired",
+    featured: true,
+    priority: 5,
+    summary:
+    "Stateless FastAPI service that recommends SHL assessments through conversational retrieval. It combines semantic search, ChromaDB, OpenAI embeddings, Groq-based reasoning, clarification turns, recommendation validation, and context compression to keep answers grounded in the assessment catalog.",
+    tags: [
+      "FastAPI",
+      "RAG",
+      "ChromaDB",
+      "OpenAI Embeddings",
+      "Groq",
+      "LangChain",
+      "Prompt Engineering"
+    ],
+    metrics: ["Stateless API", "GET /health", "POST /chat", "Live deployment"],
+    result:
+      "Recommendations are validated against the catalog and the system explicitly handles clarification, refusal, prompt-injection, and off-topic cases.",
+    architecture:
+      "User Query → FastAPI → Context Extraction → ChromaDB Retrieval → Context Compression → Groq LLM → Validation → JSON Response"
+  },
+  {
+  name: "Electricity Consumption ML Project",
+  category: ["ml", "data-science"],
+  role: "Household Power Consumption Forecasting",
+  language: "Jupyter Notebook",
+  year: "2026",
+  url: "https://github.com/rohanrepo123/Electricity_Consumption_ML_Project",
+  featured: true,
+  priority: 6,
+  summary:
+    "Machine-learning project for forecasting household electricity consumption using gradient-boosting approaches, including XGBoost and Gradient Boosting, with the objective of modeling and predicting power-demand patterns from historical consumption data.",
+  tags: [
+    "XGBoost",
+    "Gradient Boosting",
+    "Machine Learning",
+    "Forecasting",
+    "Regression",
+    "Python"
+  ]
+  },
+  {
+    name: "AI Document Analyzer",
+    category: ["rag", "nlp", "backend"],
+    role: "Document Intelligence & Semantic Search",
+    language: "Python",
+    year: "2026",
+    url: "https://github.com/rohanrepo123/AI-Document-Analyzer-",
+    featured: true,
+    priority: 7,
+    summary:
+      "End-to-end document intelligence application for PDFs, DOCX files, and images. The system combines OCR, transformer-based summarization, named-entity recognition, keyword extraction, document classification logic, and FAISS-powered semantic search.",
+    tags: [
+      "Flask",
+      "Tesseract OCR",
+      "FAISS",
+      "Sentence Transformers",
+      "KeyBERT",
+      "NER",
+      "HuggingFace"
+    ],
+    architecture:
+      "Upload → OCR / Text Extraction → Cleaning → Summarization → NER → Keywords → Embeddings → FAISS Search",
+  },
+
+
+
+  {
+    name: "Giftyy for MumzWorld",
+    category: ["genai", "rag", "nlp", "recommendation"],
+    role: "Grounded Multimodal Gift Recommendation",
+    language: "Python",
+    year: "2026",
+    url: "https://github.com/rohanrepo123/Giftyy-For-MumzWorld-",
+    featured: true,
+    priority: 8,
+    summary:
+      "Flask-based gift recommendation system for baby and mom products that supports text queries, browser speech input, image uploads, temporary conversational context, and grounded recommendations from a local product catalog.",
+    tags: [
+      "Flask",
+      "Ollama",
+      "Qwen3-VL",
+      "Embeddings",
+      "Recommendation",
+      "LangChain",
+      "Multimodal AI"
+    ],
+    metrics: ["15 deterministic evaluation cases", "Quickstart mode", "Full Ollama mode"],
+    result:
+      "The repository includes deterministic evaluation coverage for constraint handling, retrieval grounding, uncertainty, conversation carryover, and multimodal behavior.",
+    architecture:
+      "User Text / Speech / Image → Query Understanding → Catalog Retrieval → Ranking → Grounded Recommendation"
+  },
+
+
+  {
     name: "LearnTube AI",
-    category: ["rag", "nlp"],
+    category: ["rag", "genai", "nlp"],
     role: "YouTube Video Q&A Assistant",
     language: "Python",
     year: "2026",
     url: "https://github.com/rohanrepo123/LearnTube-AI-YouTube-Video-Q-A-Assistant-using-RAG-",
+    featured: true,
+    priority: 9,
     summary:
-      "RAG assistant that extracts video transcripts, builds embeddings, and turns long-form learning videos into an interactive question-answering experience.",
-    tags: ["RAG", "Embeddings", "Transcript QA", "Chat UI"],
+      "RAG application that turns YouTube transcripts into an interactive question-answering system. It extracts multilingual transcripts, chunks the content, generates embeddings, stores them in ChromaDB, retrieves relevant passages, and uses Gemini to generate context-aware responses.",
+    tags: [
+      "LangChain",
+      "Gemini",
+      "ChromaDB",
+      "Embeddings",
+      "YouTube Transcript API",
+      "Streamlit",
+      "RAG"
+    ],
+    architecture:
+      "YouTube URL → Transcript Extraction → Chunking → Embeddings → ChromaDB → Retrieval → Gemini → Answer"
   },
-  {
-    name: "Giftyy for MumzWorld",
-    category: ["nlp", "ml"],
-    role: "Bilingual Gift Recommendation",
-    language: "Python",
-    year: "2026",
-    url: "https://github.com/rohanrepo123/Giftyy-For-MumzWorld-",
-    summary:
-      "AI-powered English and Arabic gift recommendation system focused on intent understanding, product matching, and practical ecommerce personalization.",
-    tags: ["Recommendation", "EN/AR", "NLP", "Personalization"],
-  },
-  {
-    name: "AI Document Analyzer",
-    category: ["rag", "nlp"],
-    role: "Semantic Search Web App",
-    language: "Python",
-    year: "2026",
-    url: "https://github.com/rohanrepo123/AI-Document-Analyzer-",
-    summary:
-      "Document intelligence system for PDFs, DOCX, and images with OCR, summarization, NER, keyword extraction, sentiment analysis, and FAISS semantic search.",
-    tags: ["Flask", "FAISS", "OCR", "NER", "KeyBERT"],
-  },
-  {
-    name: "AI Tutor Transformer Based",
-    category: ["nlp", "ml"],
-    role: "Distributed Intelligent Tutoring",
-    language: "Jupyter Notebook",
-    year: "2026",
-    url: "https://github.com/rohanrepo123/AI-Tutor-Transformer-Based-",
-    summary:
-      "Microservice-oriented tutoring system for intent detection, topic classification, learning-style prediction, and adaptive response generation.",
-    tags: ["FastAPI", "TensorFlow", "SBERT", "Word2Vec", "Microservices"],
-  },
-  {
-    name: "Civic Complaint Prioritization",
-    category: ["nlp", "ml"],
-    role: "Multilingual Grievance Triage",
-    language: "Jupyter Notebook",
-    year: "2026",
-    url: "https://github.com/rohanrepo123/Civic-Complaint-Prioritization-a-NLP-approach",
-    summary:
-      "NLP benchmarking pipeline for citizen complaints using multilingual transformers, category classification, urgency prediction, and explainability tooling.",
-    tags: ["IndicBERT", "XLM-R", "XGBoost", "SHAP", "LIME"],
-  },
+
+  
+    {
+      name: "Nemo-Chatbot",
+      category: ["genai", "nlp"],
+      role: "LLM Chatbot",
+      language: "Python",
+      year: "2026",
+      url: "https://github.com/rohanrepo123/Nemo-Chatbot",
+      featured: false,
+      priority: 10,
+      summary:
+        "Lightweight conversational chatbot experiment built around NVIDIA Nemotron models, demonstrating direct LLM-based conversational interaction.",
+      tags: [
+        "Nemotron",
+        "LLM",
+        "Chatbot",
+        "Python"
+      ]
+    },
   {
     name: "Face Blurring New Approach",
     category: ["cv"],
-    role: "Real-time Privacy Masking",
+    role: "Real-Time Face Privacy Masking",
     language: "Jupyter Notebook",
-    year: "2026",
+    year: "2025",
     url: "https://github.com/rohanrepo123/Face_Blurring-New_approach",
+    featured: false,
+    priority: 11,
     summary:
-      "OpenCV and MTCNN face masking system with facial landmark detection, head pose estimation, and adaptive masks optimized for live webcam privacy.",
-    tags: ["OpenCV", "MTCNN", "Landmarks", "Head Pose", "Realtime"],
+      "Computer-vision privacy system that detects faces and applies adaptive masking using OpenCV and facial landmark information, with additional head-pose estimation for more robust handling of live webcam frames.",
+    tags: [
+      "OpenCV",
+      "MTCNN",
+      "Facial Landmarks",
+      "Head Pose",
+      "Real-Time CV"
+    ]
   },
+
   {
     name: "YOLO Object Detection",
-    category: ["cv"],
+    category: ["cv","dl"],
     role: "Object Detection Pipeline",
     language: "Jupyter Notebook",
-    year: "2026",
+    year: "2025",
     url: "https://github.com/rohanrepo123/Yolo_Object_Detection",
+    featured: false,
+    priority: 12,
     summary:
-      "Complete YOLOv5 object detection workflow using PyTorch, covering model setup, inference, visual detection output, and CV experimentation.",
-    tags: ["YOLOv5", "PyTorch", "Computer Vision", "Detection"],
+      "Computer-vision experimentation pipeline built around YOLOv5 and PyTorch, covering model setup, inference, object localization, and visualization of detection results.",
+    tags: [
+      "YOLOv5",
+      "PyTorch",
+      "Object Detection",
+      "Computer Vision"
+    ]
   },
+
   {
     name: "Dark Horse ClaudeSolvathon",
-    category: ["rag", "nlp"],
+    category: ["rag", "nlp", "research", "hackathon"],
     role: "Research Search Engine",
     language: "Jupyter Notebook",
     year: "2025",
     url: "https://github.com/rohanrepo123/Dark_Horse_ClaudeSolvathon",
+    featured: false,
+    priority: 13,
     summary:
-      "Hackathon RAG search system for dark matter research data, recognized with a 4th-place finish at ClaudeSolvathon IIIT Nagpur.",
-    tags: ["RAG", "Research Search", "Claude", "Hackathon"],
+      "Research-oriented RAG search system developed for a dark-matter research problem, combining retrieval and language-model reasoning to make scientific information easier to query.",
+    tags: [
+      "RAG",
+      "Research Search",
+      "Claude",
+      "Information Retrieval",
+      "Hackathon"
+    ],
+    achievement: "4th Place — ClaudeSolvathon, IIIT Nagpur"
   },
+
+  // {
+  //   name: "Road Sign / Traffic Vision Work",
+  //   category: ["cv", "genai", "research"],
+  //   role: "Vision-Language Research",
+  //   language: "Python",
+  //   year: "2026",
+  //   url: "https://github.com/rohanrepo123/RoadCap-ReWIn-",
+  //   featured: false,
+  //   priority: 12,
+  //   summary:
+  //     "Multimodal research workflow exploring how object detection can provide localized visual context to downstream vision-language models for more meaningful semantic descriptions.",
+  //   tags: [
+  //     "Vision-Language",
+  //     "YOLO",
+  //     "Qwen3-VL",
+  //     "Captioning",
+  //     "Multimodal AI"
+  //   ]
+  // },
+
+  {
+    name: "HR-helper",
+    category: ["rag", "nlp", "genai"],
+    role: "Assessment Retrieval Assistant",
+    language: "Python",
+    year: "2026",
+    url: "https://github.com/rohanrepo123/HR-helper",
+    featured: false,
+    priority: 14,
+    summary:
+      "RAG-oriented assessment discovery system focused on retrieving suitable hiring assessments from structured candidate and role requirements.",
+    tags: [
+      "RAG",
+      "Assessment Retrieval",
+      "NLP",
+      "Recommendation"
+    ]
+  },
+
+  {
+    name: "Visitor Management System",
+    category: ["web", "fullstack"],
+    role: "Visitor Management Web Application",
+    language: "Python",
+    year: "2025",
+    url: "https://github.com/rohanrepo123/Visitor-management-System",
+    featured: false,
+    priority: 15,
+    summary:
+      "Web-based visitor management application designed to digitize visitor registration and management workflows through a centralized web interface.",
+    tags: [
+      "Flask",
+      "Python",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Web Development"
+    ]
+  },
+
+  {
+    name: "Netflix Like OTT",
+    category: ["web", "fullstack"],
+    role: "OTT Streaming Platform",
+    language: "Python",
+    year: "2025",
+    url: "https://github.com/rohanrepo123/Netflix_like_OTT",
+    featured: false,
+    priority: 16,
+    summary:
+      "Netflix-inspired OTT web application focused on building a streaming-platform style interface with content browsing, media presentation, and a full web application experience.",
+    tags: [
+      "Web Development",
+      "OTT",
+      "Frontend",
+      "Backend",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  },
+
+  {
+    name: "Quiz by Flask",
+    category: ["web", "backend"],
+    role: "Flask Quiz Application",
+    language: "Python",
+    year: "2025",
+    url: "https://github.com/rohanrepo123/Quiz_byFlask",
+    featured: false,
+    priority: 17,
+    summary:
+      "Lightweight quiz web application built with Flask, demonstrating server-side routing, web forms, question handling, and interactive quiz functionality.",
+    tags: [
+      "Flask",
+      "Python",
+      "HTML",
+      "CSS",
+      "Web Forms",
+      "Backend"
+    ]
+  },
+
 ];
 
+
 const typewriterPhrases = [
-  "Designing retrieval systems...",
-  "Fine-tuning transformer pipelines...",
-  "Shipping FastAPI model services...",
-  "Reconstructing MRI k-space...",
-  "Grounding agents in real data...",
+  "Designing retrieval systems.....",
+  "Fine-tuning transformer pipelines....",
+  "Reconstructing MRI k-space....",
+  "Building vision-language systems....",
+  "Shipping FastAPI model services.....",
+  "Grounding agents in real data....",
+  "Building multimodal AI applications....",
+  "Engineering production-ready AI pipelines....",
+  "Turning research into working systems....",
+  "Making AI systems retrieve, reason, and respond...."
 ];
 
 const projectGrid = document.querySelector("#project-grid");
