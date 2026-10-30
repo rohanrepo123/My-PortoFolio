@@ -43,7 +43,7 @@
       <section class="hero section-band" aria-labelledby="hero-title">
         <div class="hero-copy reveal">
           <p class="eyebrow">AI/CV/NLP Research Engineer</p>
-          <h2 id="hero-title" >Rohan Kumar</h2>
+          <h1 id="hero-title">Rohan Kumar</h1>
           <p class="hero-line">
             I build retrieval systems, agentic AI workflows, NLP pipelines, and computer vision models that move from
             research notebooks to usable backend services.
@@ -83,12 +83,12 @@
 
       <section class="metrics-strip" aria-label="Portfolio highlights">
         <div>
-          <strong>22</strong>
+          <strong id="repo-count-summary">28</strong>
           <span>public repos</span>
         </div>
         <div>
-          <strong>15</strong>
-          <span>featured AI projects</span>
+          <strong id="project-count-summary">28</strong>
+          <span>projects & repositories</span>
         </div>
         <div>
           <strong>4th</strong>
@@ -136,19 +136,27 @@
       <section id="projects" class="section-band projects-section" aria-labelledby="projects-title">
         <div class="section-heading reveal">
           <p class="eyebrow">Selected GitHub Work</p>
-          <h2 id="projects-title">15 projects that you find useful.</h2>
+          <h2 id="projects-title">Research, agents, and vision systems built to work.</h2>
         </div>
-        <div class="filter-bar reveal" role="list" aria-label="Project filters">
+        <div class="project-controls reveal">
+          <div class="filter-bar" role="group" aria-label="Project filters">
           <button class="filter-button active" type="button" data-filter="all">All</button>
-          <button class="filter-button" type="button" data-filter="ml">ML</button>
-          <button class="filter-button" type="button" data-filter="dl">DL</button>
+          <button class="filter-button" type="button" data-filter="agentic">Agents</button>
+          <button class="filter-button" type="button" data-filter="research">Research</button>
           <button class="filter-button" type="button" data-filter="nlp">NLP</button>
-          <!-- <button class="filter-button" type="button" data-filter="rag">Agentic AI</button> -->
           <button class="filter-button" type="button" data-filter="rag">RAG</button>
           <button class="filter-button" type="button" data-filter="cv">CV</button>
-          <button class="filter-button" type="button" data-filter="web">WEB</button>
+          <button class="filter-button" type="button" data-filter="ml">ML</button>
+          <button class="filter-button" type="button" data-filter="web">Web</button>
+          </div>
+          <label class="project-search">
+            <span class="sr-only">Search projects</span>
+            <input id="project-search" type="search" placeholder="Search projects or tools" autocomplete="off" />
+          </label>
         </div>
+        <p class="project-count" id="project-count" aria-live="polite">Loading repositories...</p>
         <div class="project-grid" id="project-grid"></div>
+        <button class="load-more" id="load-more" type="button" hidden>Show more projects</button>
         <aside class="repo-tracker reveal" aria-live="polite">
           <div>
             <p class="eyebrow">Live GitHub Tracker</p>

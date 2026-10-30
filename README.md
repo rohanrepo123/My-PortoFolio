@@ -75,3 +75,7 @@ Currently, I am working as an **AI Research Intern at IIT Bombay**.
 ---
 
 > Building AI systems that can retrieve, reason, see, and ship into production.
+
+## Portfolio Project Index
+
+The live site discovers public repositories from the GitHub API and displays curated project details where available. The index includes search, topic filters, and incremental loading; new public repositories are included automatically during the live refresh. Featured project summaries are based on repository READMEs and descriptions.

@@ -125,7 +125,7 @@ const projects = [
     year: "2026",
     url: "https://github.com/rohanrepo123/RoadCap-ReWIn-",
     featured: true,
-    priority: 1,
+    priority: 4,
     summary:
       "Vision-language research pipeline that extends traffic-sign detection into semantic explanation by combining YOLO-based detection with BLIP, ViT-GPT2, and Qwen3-VL captioning. The project extends the ReWaIn-MTS dataset into a structured vision-language dataset with five semantic captions per sign.",
     tags: [
@@ -151,7 +151,7 @@ const projects = [
     year: "2026",
     url: "https://github.com/rohanrepo123/AI-Tutor-Transformer-Based-",
     featured: true,
-    priority: 2,
+    priority: 9,
     summary:
       "Distributed AI tutoring architecture that analyzes student queries for both academic topic and teaching strategy, then coordinates multiple inference services to deliver adaptive responses. The primary node manages orchestration and dialogue while secondary GPU nodes expose NLP prediction services through FastAPI.",
     tags: [
@@ -178,7 +178,7 @@ const projects = [
     year: "2025",
     url: "https://github.com/rohanrepo123/Civic-Complaint-Prioritization-a-NLP-approach",
     featured: true,
-    priority: 3,
+    priority: 5,
     summary:
       "End-to-end NLP system for classifying long, multilingual and code-mixed civic complaints into municipal categories and predicting urgency. The project compares classical machine-learning baselines against multilingual transformers and reformulates urgency prediction as a sentence-pair reasoning problem.",
     tags: [
@@ -204,7 +204,7 @@ const projects = [
     year: "2026",
     url: "https://github.com/rohanrepo123/The-Pitch-Visualizer",
     featured: true,
-    priority: 4,
+    priority: 10,
     summary:
       "Generative AI application that converts stories or pitches into coherent visual storyboards. The pipeline decomposes text into panels, creates image prompts, streams generated scenes incrementally, and maintains visual continuity using extracted scene memory and style locking.",
     tags: [
@@ -227,7 +227,7 @@ const projects = [
     year: "2026",
     url: "https://github.com/rohanrepo123/Hired",
     featured: true,
-    priority: 5,
+    priority: 8,
     summary:
     "Stateless FastAPI service that recommends SHL assessments through conversational retrieval. It combines semantic search, ChromaDB, OpenAI embeddings, Groq-based reasoning, clarification turns, recommendation validation, and context compression to keep answers grounded in the assessment catalog.",
     tags: [
@@ -354,13 +354,15 @@ const projects = [
       featured: false,
       priority: 10,
       summary:
-        "Lightweight conversational chatbot experiment built around NVIDIA Nemotron models, demonstrating direct LLM-based conversational interaction.",
+        "Agentic chatbot with streaming conversations, SQLite-backed chat memory, multiple threads, and tools for web search, weather, markets, currency, movies, and calculations.",
       tags: [
-        "Nemotron",
-        "LLM",
-        "Chatbot",
-        "Python"
-      ]
+        "LangGraph",
+        "SQLite",
+        "Streamlit",
+        "Tool Calling",
+        "Human in the Loop"
+      ],
+      demo: "https://omni-nemobot.streamlit.app/"
     },
   {
     name: "Face Blurring New Approach",
@@ -524,6 +526,148 @@ const projects = [
       "Backend"
     ]
   },
+  {
+    name: "AgentOps",
+    category: ["agentic", "rag", "backend", "research"],
+    role: "Autonomous Incident Investigation & LLMOps",
+    language: "Python",
+    year: "2026",
+    url: "https://github.com/rohanrepo123/AgentOps",
+    featured: true,
+    priority: 1,
+    summary:
+      "Production-oriented agent platform that investigates incidents across logs, metrics, deployments, and databases using typed LangGraph workflows, runbook retrieval, evaluation, and evidence-backed root-cause analysis.",
+    tags: ["LangGraph", "FastAPI", "RAG Evaluation", "Observability", "LLMOps"],
+    architecture: "Signals → Evidence Collection → Investigation Agents → Root Cause → Recovery"
+  },
+  {
+    name: "Corrective RAG",
+    category: ["agentic", "rag", "nlp", "research"],
+    role: "Adaptive Retrieval with Evidence Grading",
+    language: "Jupyter Notebook",
+    year: "2026",
+    url: "https://github.com/rohanrepo123/Corrective-RAG",
+    featured: true,
+    priority: 2,
+    summary:
+      "LangGraph CRAG pipeline that grades retrieved chunks, rewrites weak queries, falls back to Tavily web search, and filters retrieved text at sentence level before answer generation.",
+    tags: ["LangGraph", "LangChain", "Tavily", "Ollama", "Retrieval Grading"],
+    architecture: "Query → Retrieve → Grade → Refine or Search Web → Filter Evidence → Answer"
+  },
+  {
+    name: "JARVIS Desktop Assistant",
+    category: ["agentic", "genai", "cv", "backend"],
+    role: "Local Voice-Enabled Windows Assistant",
+    language: "Python",
+    year: "2026",
+    url: "https://github.com/rohanrepo123/JARVIS-CUDA-Enabled-Desktop-AI-Assistant",
+    featured: true,
+    priority: 3,
+    summary:
+      "Windows desktop assistant combining local Ollama chat, LangGraph tools and memory, faster-whisper transcription with CUDA acceleration and CPU fallback, streaming replies, and optional spoken responses.",
+    tags: ["Ollama", "LangGraph", "Whisper", "CUDA", "Voice UI"]
+  },
+  {
+    name: "Cats vs Dogs Classifier",
+    category: ["cv", "dl", "ml"],
+    role: "CNN & VGG16 Transfer Learning",
+    language: "Jupyter Notebook",
+    year: "2026",
+    url: "https://github.com/rohanrepo123/Caty-Dogy",
+    featured: true,
+    priority: 5,
+    summary:
+      "Image-classification study comparing custom CNNs with VGG16 transfer learning, augmentation, and fine-tuning on a 10,028-image Kaggle dataset.",
+    tags: ["TensorFlow", "Keras", "CNN", "VGG16", "Transfer Learning"],
+    result: "Fine-tuned VGG16 reached 95.06% validation accuracy."
+  },
+  {
+    name: "Fine-Tuned BERT Emotion Classifier",
+    category: ["nlp", "dl", "ml", "research"],
+    role: "Emotion Classification & Selective Fine-Tuning",
+    language: "Jupyter Notebook",
+    year: "2026",
+    url: "https://github.com/rohanrepo123/Fined-Tuned-Bert",
+    featured: true,
+    priority: 6,
+    summary:
+      "Hugging Face training study comparing full BERT fine-tuning with selective unfreezing for sadness, joy, and anger classification on a filtered emotion dataset.",
+    tags: ["BERT", "Transformers", "Hugging Face Trainer", "Fine-Tuning", "PyTorch"],
+    metrics: ["10,028 examples", "3 emotion labels", "Full and selective tuning"]
+  },
+  {
+    name: "FastRender",
+    category: ["backend", "web"],
+    role: "FastAPI Deployment",
+    language: "Python",
+    year: "2026",
+    url: "https://github.com/rohanrepo123/FastRender",
+    featured: false,
+    priority: 20,
+    summary: "FastAPI application configured for deployment on Render.",
+    tags: ["FastAPI", "Render", "Python", "Deployment"]
+  },
+  {
+    name: "Automated Blog Posting",
+    category: ["agentic", "genai", "nlp"],
+    role: "AI-Assisted Blog Publishing (In Development)",
+    language: "Jupyter Notebook",
+    year: "2026",
+    url: "https://github.com/rohanrepo123/Automated-Blog-Posting",
+    featured: false,
+    priority: 21,
+    summary: "An AI blog-posting project currently in development.",
+    tags: ["Generative AI", "Content Workflow", "In Development"]
+  },
+  {
+    name: "Document Scanner",
+    category: ["cv", "ml"],
+    role: "Computer Vision Utility",
+    language: "Python",
+    year: "2025",
+    url: "https://github.com/rohanrepo123/Document_Scanner",
+    featured: false,
+    priority: 22,
+    summary: "Python computer-vision repository for document scanning.",
+    tags: ["Python", "Computer Vision", "Image Processing"]
+  },
+  {
+    name: "Face Detection & Recognition",
+    category: ["cv", "ml"],
+    role: "OpenCV Face Recognition",
+    language: "Python",
+    year: "2025",
+    url: "https://github.com/rohanrepo123/Face_Detection",
+    featured: false,
+    priority: 23,
+    summary:
+      "Face detection and recognition pipeline using Haar cascades and an LBPH recognizer trained on a custom image dataset.",
+    tags: ["OpenCV", "Haar Cascades", "LBPH", "Python"]
+  },
+  {
+    name: "My Portfolio Website",
+    category: ["web", "backend"],
+    role: "Personal Portfolio & GitHub Pages",
+    language: "JavaScript",
+    year: "2026",
+    url: "https://github.com/rohanrepo123/My-PortoFolio",
+    featured: false,
+    priority: 24,
+    summary: "This portfolio: a responsive static site with project discovery and live public repository tracking.",
+    tags: ["HTML", "CSS", "JavaScript", "GitHub Pages"]
+  },
+  {
+    name: "GitHub Profile README",
+    category: ["web", "research"],
+    role: "Developer Profile",
+    language: "Markdown",
+    year: "2026",
+    url: "https://github.com/rohanrepo123/rohanrepo123",
+    featured: false,
+    priority: 25,
+    summary: "GitHub profile README describing research interests, current work, technical stack, and contact links.",
+    tags: ["Markdown", "GitHub", "Developer Profile"]
+  },
 
 ];
 
@@ -551,24 +695,101 @@ const changedCount = document.querySelector("#changed-count");
 const trackerStatus = document.querySelector("#tracker-status");
 const trackerList = document.querySelector("#tracker-list");
 const repoSnapshotKey = `github-repo-snapshot:${GITHUB_USER}`;
+const projectSearch = document.querySelector("#project-search");
+const projectCount = document.querySelector("#project-count");
+const loadMoreButton = document.querySelector("#load-more");
+const PROJECTS_PER_PAGE = 12;
+let liveRepositories = null;
+let activeProjectFilter = "all";
+let visibleProjectLimit = PROJECTS_PER_PAGE;
 
-function renderProjects(filter = "all") {
-  const filtered = filter === "all" ? projects : projects.filter((project) => project.category.includes(filter));
-  projectGrid.innerHTML = filtered
+function escapeHTML(value = "") {
+  return String(value).replace(/[&<>"']/g, (character) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;",
+  })[character]);
+}
+
+function repositorySlug(url) {
+  return new URL(url).pathname.split("/").filter(Boolean).at(-1).toLowerCase();
+}
+
+function classifyRepository(repo) {
+  const signal = `${repo.name} ${repo.description || ""} ${repo.language || ""}`.toLowerCase();
+  const categories = [];
+  if (/agent|assistant|chatbot|autonomous|workflow/.test(signal)) categories.push("agentic");
+  if (/rag|retriev|vector|embedding|search/.test(signal)) categories.push("rag");
+  if (/nlp|text|language|bert|llm|chat|transcri|blog/.test(signal)) categories.push("nlp");
+  if (/vision|image|face|yolo|cnn|detection|scanner|caption|mri|opencv/.test(signal)) categories.push("cv");
+  if (/research|paper|benchmark|dataset|medical|mri/.test(signal)) categories.push("research");
+  if (/machine learning|deep learning|classifier|forecast|prediction|tensorflow|pytorch/.test(signal)) categories.push("ml");
+  if (/web|website|portfolio|flask|fastapi|html|javascript|php/.test(signal)) categories.push("web");
+  return categories.length ? [...new Set(categories)] : [repo.language === "Python" ? "ml" : "web"];
+}
+
+function getProjectCatalog() {
+  if (!liveRepositories) return projects;
+
+  const curatedBySlug = new Map(projects.map((project) => [repositorySlug(project.url), project]));
+  return liveRepositories.map((repo) => {
+    const curated = curatedBySlug.get(repo.name.toLowerCase());
+    if (curated) {
+      return { ...curated, language: repo.language || curated.language, pushedAt: repo.pushed_at, stars: repo.stargazers_count };
+    }
+
+    const name = repo.name === GITHUB_USER ? "GitHub Profile README" : repo.name.replace(/[-_]+/g, " ");
+    return {
+      name,
+      category: classifyRepository(repo),
+      role: repo.name === GITHUB_USER ? "Developer Profile" : `${repo.language || "Public"} Repository`,
+      language: repo.language || "Mixed",
+      year: repo.pushed_at ? new Date(repo.pushed_at).getFullYear() : "",
+      url: repo.html_url,
+      summary: repo.description || "Public repository on GitHub. Open the repository to explore its source and documentation.",
+      tags: [repo.language || "GitHub", "Public repository"],
+      pushedAt: repo.pushed_at,
+      stars: repo.stargazers_count,
+    };
+  });
+}
+
+function matchesProjectFilter(project, filter) {
+  if (filter === "all") return true;
+  if (filter === "agentic") return project.category.includes("agentic") || project.category.includes("genai");
+  return project.category.includes(filter);
+}
+
+function renderProjects() {
+  const query = projectSearch.value.trim().toLowerCase();
+  const catalog = getProjectCatalog()
+    .filter((project) => matchesProjectFilter(project, activeProjectFilter))
+    .filter((project) => `${project.name} ${project.role} ${project.summary} ${project.tags.join(" ")}`.toLowerCase().includes(query))
+    .sort((first, second) => (first.priority ?? 99) - (second.priority ?? 99));
+  const visible = catalog.slice(0, visibleProjectLimit);
+
+  projectCount.textContent = `${catalog.length} ${catalog.length === 1 ? "repository" : "repositories"}${query ? " found" : " in the portfolio"}`;
+  loadMoreButton.hidden = visible.length >= catalog.length;
+  loadMoreButton.textContent = `Show ${Math.min(PROJECTS_PER_PAGE, catalog.length - visible.length)} more`;
+  projectGrid.innerHTML = visible
     .map(
-      (project, index) => `
-        <article class="project-card reveal visible" style="transition-delay: ${Math.min(index * 45, 280)}ms">
+      (project) => `
+        <article class="project-card ${project.featured ? "featured-project" : ""}">
           <div class="project-topline">
-            <span>${project.role}</span>
-            <span>${project.year} / ${project.language}</span>
+            <span>${escapeHTML(project.role)}</span>
+            <span>${escapeHTML(project.language)}${project.stars ? ` · ${project.stars} ★` : ""}</span>
           </div>
-          <h3>${project.name}</h3>
-          <p>${project.summary}</p>
+          <h3>${escapeHTML(project.name)}</h3>
+          <p>${escapeHTML(project.summary)}</p>
+          ${project.result ? `<p class="project-result">${escapeHTML(project.result)}</p>` : ""}
           <div class="project-tags">
-            ${project.tags.map((tag) => `<span>${tag}</span>`).join("")}
+            ${project.tags.map((tag) => `<span>${escapeHTML(tag)}</span>`).join("")}
           </div>
           <div class="project-links">
-            <a class="project-link" href="${project.url}" target="_blank" rel="noreferrer">Open repository</a>
+            <a class="project-link" href="${escapeHTML(project.url)}" target="_blank" rel="noreferrer">Repository <span aria-hidden="true">↗</span></a>
+            ${project.demo ? `<a class="project-link" href="${escapeHTML(project.demo)}" target="_blank" rel="noreferrer">Live demo <span aria-hidden="true">↗</span></a>` : ""}
           </div>
         </article>
       `,
@@ -586,8 +807,20 @@ filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     filterButtons.forEach((item) => item.classList.remove("active"));
     button.classList.add("active");
-    renderProjects(button.dataset.filter);
+    activeProjectFilter = button.dataset.filter;
+    visibleProjectLimit = PROJECTS_PER_PAGE;
+    renderProjects();
   });
+});
+
+projectSearch.addEventListener("input", () => {
+  visibleProjectLimit = PROJECTS_PER_PAGE;
+  renderProjects();
+});
+
+loadMoreButton.addEventListener("click", () => {
+  visibleProjectLimit += PROJECTS_PER_PAGE;
+  renderProjects();
 });
 
 function runTypewriter() {
@@ -814,6 +1047,10 @@ async function fetchGitHubRepos() {
 async function updateGitHubTracker() {
   try {
     const repos = await fetchGitHubRepos();
+    liveRepositories = repos;
+    document.querySelector("#repo-count-summary").textContent = String(repos.length);
+    document.querySelector("#project-count-summary").textContent = String(repos.length);
+    renderProjects();
     renderTracker(repos);
   } catch (error) {
     trackerStatus.textContent =
